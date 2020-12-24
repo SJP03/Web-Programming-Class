@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <title>웹 프로그래밍</title>
+</HEAD>
+<BODY>
+    이름: <b>박성준</b><br>
+    학부(과): 영어영문학과<br>
+    전자우편: qkrtjdwns03@naver.com<br>
+    <p>
+    안녕하세요.<br>
+    좋아하는 것<br>
+    <ul>
+        <li>운동</li>
+        <li>게임</li>
+    </ul> 
+</BODY>
+</HTML>
