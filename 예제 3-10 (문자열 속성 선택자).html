@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <title>웹 프로그래밍</title>
+        <style>
+            p[text]{color:red;}
+            p[text="test"] {background-color:purple; color:yellow;}
+            
+            p[text~="Hi"] {background-color:green; color:yellow;}
+            p[text|="Hi"] {background-color:blue; color:yellow;}
+
+            p[text^="img"] {background-color:red; color:yellow;}
+            p[text$=".png"] {background-color:gray; color:yellow;}
+            p[text*="Hello"] {background-color:pink; color:yellow;}
+        </style>
+    </HEAD>
+    <BODY>
+        <p text="hello">모든 텍스트</p>
+        <p text="sjp">모든 텍스트</p>
+        <p text="test">속성과 속성 값이 동일한 태그</p>
+        <p text="Hi PSJ">Hi PSJ : 리스트 매칭</p>
+        <p text="Hi-PSJ">Hi-PSJ : 리스트 매칭</p>
+        <p text="img/sjp.jpg">img/sjp.jpg : 텍스트 시작 매칭</p>
+        <p text="img/sjp.png">img/sjp.png : 텍스트 끝 매칭</p>
+        <p text="Hello World!!!">"Hello World!!! : 텍스트 패턴 매칭</p>
+    </BODY>
+</HTML>
