@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD><title>웹 프로그래밍</title></HEAD>
+    <BODY>
+        <p id="carname"></p>
+        <p id="carcolor"></p>
+        <p id="carspeed"></p>
+        
+        <script>
+            //생성자 함수 정의
+            function Car(name,color,speed){
+                //멤버 변수 정의
+                this.name=name;
+                this.color=color;
+                this.speed=speed;
+
+                //멤버 함수 정의
+                this.speedup=function(){
+                    return this.speed+10;
+                };
+                this.speeddown=function(){
+                    return this.speed-10;
+                };
+            }
+
+            //객체 생성
+            var clickseoCar=new Car("iClickseo","silver",100);
+
+            var carName=document.getElementById("carname");
+            carName.textContent="자동차 이름: "+clickseoCar.name;
+            var colorName=document.getElementById("carcolor");
+            colorName.textContent="자동차 색상: "+clickseoCar.color;
+            var carSpeed=document.getElementById("carspeed");
+            carSpeed.textContent="자동차 속도: "+clickseoCar.speedup();
+        </script>
+    </BODY>
+</HTML>

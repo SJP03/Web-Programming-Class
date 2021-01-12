@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <title>웹 프로그래밍</title>
+        <style> 
+            div{
+                position:relative;
+                height:100px;
+                width:100px;
+                background:silver;
+                border:1px solid black;
+                animation:boxAnimation 5s linear infinite;
+            }
+            @keyframes boxAnimation{
+                from{left:0px;}
+                to{left:300px;}
+            }
+            #box1{
+                animation-delay:1s;
+                animation-iteration-count:2;
+            }
+            #box2{
+                animation-direction:reverse;
+                animation-delay:3s;
+                animation-iteration-count:5;
+            }
+            #box3{
+                animation-direction:alternate;
+                animation-delay:1s;
+            }
+            
+        </style>
+    </HEAD>
+    <BODY>
+        <div id="box1">Animation Box #01</div>
+        <div id="box2">Animation Box #02</div>
+        <div id="box3">Animation Box #03</div>
+    </BODY>
+</HTML>
